@@ -1,0 +1,35 @@
+body {
+  font-family: 'Roboto';
+  background-color: #F2F2F2;
+}
+
+.button {
+  align-self: flex-start;
+  padding: 5px 15px;
+  background-color: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  outline: none;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: #3498db;
+  border-color: #2980b9;
+  color: #FFF;
+}
+
+.button-primary:hover {
+  background-color: #2980b9;
+  border-color: #3498db;
+}
+
+.button-danger {
+  background-color: #e74c3c;
+  border-color: #c0392b;
+  color: #FFF;
+}
+
+.button-danger:hover {
+  background-color: #c0392b;
+  border-color: #e74c3c;
+}
