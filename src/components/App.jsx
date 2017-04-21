@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
@@ -15,7 +16,7 @@ App.propTypes = {
 };
 
 App.defaultProps = {
-  children: {},
+  children: <div />,
 };
 
 function mapStateToProps(state) {

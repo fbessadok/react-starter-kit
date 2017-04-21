@@ -4,7 +4,7 @@ import React from 'react';
 import { render } from 'react-dom';
 
 import { Provider } from 'react-redux';
-import { Router, browserHistory } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
@@ -22,7 +22,9 @@ const store = configureStore();
 
 render(
   <Provider store={store}>
-    <Router history={browserHistory} routes={getRoutes(store)} />
+    <BrowserRouter>
+      {getRoutes(store)}
+    </BrowserRouter>
   </Provider>,
   document.getElementById('react-starter-example')
 );
